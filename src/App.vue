@@ -1,23 +1,20 @@
 <template>
-  <v-app>
-    <v-content>
-      <dashboard/>
-    </v-content>
-  </v-app>
+  <div id="app">
+    <v-app>
+      <v-content>
+        <router-view>
+          <router-link to="/login">Login</router-link>
+          <router-link to="/dashboard">Dashboard</router-link>
+        </router-view>
+      </v-content>
+    </v-app>
+  </div>
 </template>
 
 <script>
-import Dashboard from './components/dashboard'
-
 export default {
-  name: 'App',
+  name: 'app'
 
-  components: {
-    Dashboard
-  },
-
-  data: () => ({
-    //
-  })
 }
+
 </script>
