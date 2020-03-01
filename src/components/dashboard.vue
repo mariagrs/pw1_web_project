@@ -122,7 +122,7 @@ export default {
       try {
         var date = new Date()
         const result = await axios.post('http://localhost:3000/api/v1/exercise', {
-          consignes: this.consignes,
+          consignes: this.instructions,
           lang: 'python',
           title: this.title,
           tests: this.tests_editor.getValue(),
