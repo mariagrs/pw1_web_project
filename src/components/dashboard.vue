@@ -56,7 +56,7 @@
               <div>
                 <p class="font-weight-bold headline">Test</p>
               </div>
-              <div id="test-editor" class="exercise-editor-ace-editor" ></div>
+              <div id="tests_editor" class="exercise-editor-ace-editor" ></div>
               <br>
               <v-row>
                 <div>
@@ -66,7 +66,7 @@
                 <v-icon dark>mdi-play</v-icon>
                 </v-btn>
               </v-row>
-              <div id="solution-editor"  class="exercise-editor-ace-editor">
+              <div id="solution_editor"  class="exercise-editor-ace-editor">
               </div>
               <br>
               <div>
@@ -97,11 +97,11 @@ export default {
     tests_editor: null
   }),
   mounted () {
-    this.tests_editor = ace.edit('test-editor')
+    this.tests_editor = ace.edit('tests_editor')
     this.tests_editor.setTheme('ace/theme/monokai')
     this.tests_editor.session.setMode('ace/mode/python')
 
-    this.solution_editor = ace.edit('solution-editor')
+    this.solution_editor = ace.edit('solution_editor')
     this.solution_editor.setTheme('ace/theme/monokai')
     this.solution_editor.session.setMode('ace/mode/python')
   },
